@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake Game</title>
+</head>
+<style>
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 0;
+        overflow: hidden;
+        display: block;
+    }
+
+    .container{
+        padding: 20px;
+        background-color: burlywood;
+    }
+
+    .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+      }
+
+      .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+      }
+
+
+</style>
+<script src="GameEngine.js"></script>
+<body>
+    <div class="container">
+        <ul class="flex-container">
+            <li class="flex-item">Score: <span id="score">0</span></li>
+            <li class="flex-item"></li>
+            <li class="flex-item"><button class="game-over" onclick="restart()">restart</button></li>
+        </ul><br>
+        <canvas id="snakeCanvas"></canvas>
+        <script src="snake_game.js"></script>
+    </div>
+</body>
+</html>
